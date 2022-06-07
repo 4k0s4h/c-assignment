@@ -52,7 +52,7 @@ h2 {
 }
 
 
-/********** media queries **********/
+/********** responsive media queries **********/
 
 @media(min-width: 992px) {
     #col {
