@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -15,14 +15,13 @@ h2 {
     text-decoration: solid;
 }
 
-div {
+.row {
+    width: 100%;
+}
+
+#col {
+    background-color: grey;
     border: 2px solid #000;
-    margin: 20px;
-    background-color: gray;
-    width: 30%;
-    height: 280px;
-    float: left;
-    overflow: hidden;
 }
 
 .tab {
@@ -30,14 +29,13 @@ div {
     width: 40%;
     height: 10%;
     text-align: center;
-    background-color: #f1d556d7;
     position: relative;
     left: 60%;
     font-size: 1.2em;
 }
 
 #num1 {
-    background-color: #b69e37d7;
+    background-color: #e4a74c;
 }
 
 #num2 {
@@ -50,5 +48,103 @@ div {
 
 .content {
     font-family: 'ubuntu';
-    margin: 15px;
+    margin: 5%;
+}
+
+
+/********** media queries **********/
+
+@media(min-width: 992px) {
+    #col {
+        float: left;
+        height: 280px;
+        margin: 20px 0px 20px 2em;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 30%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #col {
+        float: left;
+        height: 280px;
+        margin: 20px 1% 20px 1%;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 48%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 98%;
+    }
+}
+
+@media(max-width: 767px) {
+    #col {
+        width: 90%;
+        margin: 20px auto 20px auto;
+    }
 }
