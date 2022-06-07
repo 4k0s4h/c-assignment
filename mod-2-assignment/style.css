@@ -3,3 +3,52 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'lobster', 'Ubunbu', serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+    font: 'ubuntu';
+    text-decoration: solid;
+}
+
+div {
+    border: 2px solid #000;
+    margin: 20px;
+    background-color: gray;
+    width: 30%;
+    height: 280px;
+    float: left;
+    overflow: hidden;
+}
+
+.tab {
+    border: 1px solid #000;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    background-color: #f1d556d7;
+    position: relative;
+    left: 60%;
+    font-size: 1.2em;
+}
+
+#num1 {
+    background-color: #b69e37d7;
+}
+
+#num2 {
+    background-color: #7bb430d7;
+}
+
+#num3 {
+    background-color: #6cafeed7;
+}
+
+.content {
+    font-family: 'ubuntu';
+    margin: 15px;
+}
